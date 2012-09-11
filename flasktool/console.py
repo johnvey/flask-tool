@@ -4,7 +4,7 @@ from __future__ import absolute_import
 from .extensions import FlaskExtension
 from .apps import FlaskApplication
 from flask import Flask
-from flaskext.script import prompt, prompt_choices, Manager, Option
+from flask.ext.script import prompt, prompt_choices, Manager, Option
 import string
 
 

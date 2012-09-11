@@ -3,7 +3,7 @@ Tooling for Flask.
 
 ## Install
 
-    pip install -e git+git://github.com/imlucas/flask-tool#egg=flasktool
+    pip install -e git+git://github.com/johnvey/flask-tool#egg=flasktool
 
 
 ## Create a new extension skeleton

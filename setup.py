@@ -2,16 +2,17 @@
 from setuptools import setup
 """
 `flasktool create ext`
-    Console prompts to create a skeleton for a new extension.
+    Console prompts to create a skeleton for a new extension. Adapted from 
+    https://github.com/imlucas/flask-tool
 """
 
 setup(
     name='Flask-Tool',
-    version='0.1',
-    url='http://imlucas.com/',
+    version='0.1.1',
+    url='https://github.com/johnvey/flask-tool',
     license='BSD',
-    author='Lucas Hrabovsky',
-    author_email='hrabovsky.lucas@gmail.com',
+    author='J Hwang',
+    author_email='code@johnvey.com',
     description='Some tooling for developing with flask.',
     long_description=__doc__,
     packages=['flasktool'],
