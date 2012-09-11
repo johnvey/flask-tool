@@ -4,17 +4,17 @@ set -o errexit
 set -o nounset
 
 HERE=`dirname $0`
-APP=`python -c "import os,sys;print os.path.abspath(os.path.join('$HERE','../flasktool/templates/apps/'))"`/static
+APP=`python -c "import os,sys;print os.path.abspath(os.path.join('$HERE','../flasktool/templates/apps/'))"`
 STATIC="$APP/static"
 
-curl -fsSL 'http://github.com/paulirish/html5-boilerplate/zipball/v2.0' -o BOIL
+curl -fsSL 'https://github.com/h5bp/html5-boilerplate/zipball/master' -o BOIL
 unzip -q BOIL
 
 command rm -rf $STATIC
-mv paulirish* $STATIC
+mv h5bp* $STATIC
 rm BOIL
 
-cat << EOF $STATIC/README.rst
+cat << EOF $STATIC/README.md
 How To Use html5boilerplate (with flask)
 ==========================================
 
