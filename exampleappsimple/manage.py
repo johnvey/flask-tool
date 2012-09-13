@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 from __future__ import absolute_import
 
-from flaskext.script import Manager
+from flask.ext.script import Manager
 
 from app import app
 
