@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 from __future__ import absolute_import
 
-from flask.ext.script import Manager
+from flask.ext.script import Manager, Server
 {% if app.layout == 'factory' %}
 from {{app.package_name}} import create_app
 app = create_app()
